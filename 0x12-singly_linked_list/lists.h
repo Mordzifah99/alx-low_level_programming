@@ -2,10 +2,12 @@
 #define LISTS_H
 
 /**
- * function that prints all the element of a list
- * @next: leads to the next node
- * @str: malloc string
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
  * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
  */
 
 typedef struct list_s
