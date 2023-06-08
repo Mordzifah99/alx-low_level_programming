@@ -2,7 +2,7 @@
 
 /**
  * listint_len: returns the number of element in a linked list
- * @h: traversing of linked list of type listint_t
+ * @h: traverse of linked list of type listint_t
  * Return: the number of nodes
  */
 size_t listint_len(const listint_t *h)
@@ -14,5 +14,6 @@ size_t listint_len(const listint_t *h)
 		num++;
 		h = h->next;
 	}
+
 	return (num);
 }
