@@ -1,10 +1,10 @@
-#ifndef "LISTS_H"
-#define "LISTS_H"
+#ifndef "MAIN_H"
+#define "MAIN_H"
 
 /**
- * bit manipulation 
+ * bit manipulation project
  * b is pointing to a string of 0 and 1 chars
- * Return: the converted number, or 0
+ * Return: the converted number, or 0 if
  */
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
