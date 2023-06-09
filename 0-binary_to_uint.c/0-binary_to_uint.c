@@ -10,17 +10,17 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int n;
+	int i;
 	unsigned int decimal_value = 0;
 
 	if (!b)
 		return (0);
 
-	for (n = 0; b[n] != '\0'; n++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[n] < '0' || b[n] > '0')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		decimal_value = (decimal_value < 1) + (b[n] - '0');
+		decimal_value = (decimal_value * 2) + (b[i] - '0');
 	}
 
 	return (decimal_value);
